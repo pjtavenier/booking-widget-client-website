@@ -11,7 +11,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Fetch the content of the GitHub page
-        fetch("https://pjtavenier.github.io/booking-widget/index.html")
+        fetch("https://pjtavenier.github.io/booking-widget-server/widget.html")
           .then((response) => response.text())
           .then((html) => {
             document.getElementById("bookingWidget").innerHTML = html;
@@ -23,7 +23,7 @@
     </script>
 
     <script
-      src="https://pjtavenier.github.io/booking-widget/widget.js"
+      src="https://pjtavenier.github.io/booking-widget-server/widget.js"
       defer
     ></script>
   </body>
