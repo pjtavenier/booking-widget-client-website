@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Website</title>
+  </head>
+  <body>
+    <!-- Placeholder div to inject the booking widget -->
+    <div id="bookingWidget"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Fetch the content of the GitHub page
+        fetch("https://pjtavenier.github.io/booking-widget/index.html")
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById("bookingWidget").innerHTML = html;
+          })
+          .catch((error) => {
+            console.error("Error fetching GitHub page:", error);
+          });
+      });
+    </script>
+
+    <script
+      src="https://pjtavenier.github.io/booking-widget/widget.js"
+      defer
+    ></script>
+  </body>
+</html>
